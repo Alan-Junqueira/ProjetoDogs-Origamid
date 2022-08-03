@@ -6,6 +6,8 @@ export const UserStatsGraphs = ({ data }) => {
   const [graph, setGraph] = React.useState([]);
   const [total, setTotal] = React.useState(0);
 
+
+
   React.useEffect(() => {
     const graphData = data.map((item) => {
       return {
@@ -51,3 +53,5 @@ export const UserStatsGraphs = ({ data }) => {
     </section>
   );
 };
+
+export default UserStatsGraphs;
