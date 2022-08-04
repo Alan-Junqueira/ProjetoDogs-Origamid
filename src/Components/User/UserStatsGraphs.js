@@ -2,11 +2,9 @@ import React from 'react';
 import styles from './css/UserStatsGraphs.module.css';
 import { VictoryPie, VictoryChart, VictoryBar } from 'victory';
 
-export const UserStatsGraphs = ({ data }) => {
+const UserStatsGraphs = ({ data }) => {
   const [graph, setGraph] = React.useState([]);
   const [total, setTotal] = React.useState(0);
-
-
 
   React.useEffect(() => {
     const graphData = data.map((item) => {
@@ -15,7 +13,6 @@ export const UserStatsGraphs = ({ data }) => {
         y: Number(item.acessos)
       };
     });
-
     setTotal(
       data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b)
     );
@@ -45,9 +42,10 @@ export const UserStatsGraphs = ({ data }) => {
           }}
         />
       </div>
+
       <div className={styles.graphItem}>
         <VictoryChart>
-          <VictoryBar aligment="start" data={graph}></VictoryBar>
+          <VictoryBar alignment="start" data={graph}></VictoryBar>
         </VictoryChart>
       </div>
     </section>
