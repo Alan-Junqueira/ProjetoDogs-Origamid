@@ -3,7 +3,7 @@
 A parte de estatisticas, caso não tenha nenhuma foto publicada, da um bug que não consegui resolver. Se tiver foto publicada, quando esta sem visualização também tem um bug visual, após ter visualização e ter foto publicada, tudo normaliza. (não consegui resolver)
 
 Para acessar o site do projeto acesse:
-https://alan-junqueira.github.io/ProjetoDogs-Origamid/
+https://alan-junqueira.github.io/
 Ao abrir, se não carregar, aperta f5 (Você será direcionado pra uma página que da erro 404, basta clicar para fazer o login, e criar uma conta, a conta padrão do site é id: dog, senha: dog.)
 
 # Getting Started with Create React App
